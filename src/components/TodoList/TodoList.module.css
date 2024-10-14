@@ -1,0 +1,89 @@
+.TodoList{
+    background-color: black;
+    border-radius: 34px;
+    padding: 6px 6px 0;
+    margin-bottom: 50px;
+    filter: drop-shadow(0px 10px 300px oklch(from var(--list-color) l c h / 60%));
+}
+
+.TodoList__wrapper{
+    display: flex;
+    background-color: var(--list-color);
+    flex-direction: column;
+    align-items: center;
+    min-width: 420px;
+    border-radius: 30px;
+}
+
+
+.TodoList__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.TodoList__mode{
+    display: flex;
+    align-items: center;
+}
+
+*::selection{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.TodoList__header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.TodoList__input{
+    flex: 1;
+    padding: 18px 20px;
+    border: none;
+    font-size: 1.5em;
+    outline: none;
+    background-color: transparent;
+}
+
+.TodoList__input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.TodoList__button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.TodoList__button:hover{
+    transition: background-color 0.1s;
+    background-color: #222;
+}
+
+.TodoList__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.TodoList__title{
+    padding-left: 20px;
+}

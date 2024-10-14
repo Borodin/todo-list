@@ -1,0 +1,25 @@
+.Button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0;
+    font-size: 14px;
+}
+
+.Button:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.Button_secondary{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.Button_primary{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: white;
+}

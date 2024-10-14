@@ -1,0 +1,52 @@
+.TodoItem{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 20px 16px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 1.5em;
+    color: black;
+}
+
+.TodoItem__text{
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+    text-decoration-color: rgba(0, 0, 0, 0.6);
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+
+.TodoItem__text_completed{
+    text-decoration-line: line-through;
+}
+
+.TodoItem__checkbox{
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TodoItem__deleteButton{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.2);
+    transition: color 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TodoItem__deleteButton:hover{
+    color: rgba(0, 0, 0, 0.6);
+    transition: color 0.1s;
+}
